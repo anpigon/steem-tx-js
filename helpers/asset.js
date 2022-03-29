@@ -1,4 +1,4 @@
-/** Class representing a hive asset,
+/** Class representing a steem asset,
  * e.g. `1.000 HIVE` or `12.112233 VESTS`. */
 class Asset {
   /** Create a new Asset instance from a string, e.g. `42.000 HIVE`. */

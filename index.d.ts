@@ -1,6 +1,6 @@
 import { PrivateKey as PK } from './helpers/PrivateKey'
 
-declare module 'hive-tx'
+declare module 'steem-tx'
 
 export class PrivateKey extends PK {}
 

@@ -176,7 +176,7 @@ const SignedBlockHeaderSerializer = ObjectSerializer([
 const ChainPropertiesSerializer = ObjectSerializer([
   ['account_creation_fee', AssetSerializer],
   ['maximum_block_size', UInt32Serializer],
-  ['hbd_interest_rate', UInt16Serializer]
+  ['sbd_interest_rate', UInt16Serializer]
 ])
 
 const OperationDataSerializer = (operationId, definitions) => {
@@ -258,8 +258,8 @@ OperationSerializers.claim_account = OperationDataSerializer(22, [
 
 OperationSerializers.claim_reward_balance = OperationDataSerializer(39, [
   ['account', StringSerializer],
-  ['reward_hive', AssetSerializer],
-  ['reward_hbd', AssetSerializer],
+  ['reward_steem', AssetSerializer],
+  ['reward_sbd', AssetSerializer],
   ['reward_vests', AssetSerializer]
 ])
 
@@ -277,7 +277,7 @@ OperationSerializers.comment_options = OperationDataSerializer(19, [
   ['author', StringSerializer],
   ['permlink', StringSerializer],
   ['max_accepted_payout', AssetSerializer],
-  ['percent_hbd', UInt16Serializer],
+  ['percent_steem_dollars', UInt16Serializer],
   ['allow_votes', BooleanSerializer],
   ['allow_curation_rewards', BooleanSerializer],
   [
@@ -371,8 +371,8 @@ OperationSerializers.escrow_release = OperationDataSerializer(29, [
   ['who', StringSerializer],
   ['receiver', StringSerializer],
   ['escrow_id', UInt32Serializer],
-  ['hbd_amount', AssetSerializer],
-  ['hive_amount', AssetSerializer]
+  ['sbd_amount', AssetSerializer],
+  ['steem_amount', AssetSerializer]
 ])
 
 OperationSerializers.escrow_transfer = OperationDataSerializer(27, [
@@ -380,8 +380,8 @@ OperationSerializers.escrow_transfer = OperationDataSerializer(27, [
   ['to', StringSerializer],
   ['agent', StringSerializer],
   ['escrow_id', UInt32Serializer],
-  ['hbd_amount', AssetSerializer],
-  ['hive_amount', AssetSerializer],
+  ['sbd_amount', AssetSerializer],
+  ['steem_amount', AssetSerializer],
   ['fee', AssetSerializer],
   ['ratification_deadline', DateSerializer],
   ['escrow_expiration', DateSerializer],

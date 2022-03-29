@@ -1,20 +1,20 @@
 {
-  "name": "hive-tx",
+  "name": "steem-tx",
   "version": "4.0.1",
   "description": "Create, sign, and broadcast transactions on Hive blockchain",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-browser": "browserify index.js -p tinyify --standalone hiveTx > dist/hive-tx.min.js"
+    "build-browser": "browserify index.js -p tinyify --standalone steemTx > dist/steem-tx.min.js"
   },
   "keywords": [
-    "hive",
+    "steem",
     "tx",
     "transaction",
     "sign",
     "broadcast",
     "blockchain",
-    "hive-tx"
+    "steem-tx"
   ],
   "author": "Mahdi Yari",
   "license": "MIT",
@@ -25,10 +25,10 @@
     "crypto-js": "^3.1.9-1",
     "secp256k1": "^3.8.0"
   },
-  "homepage": "https://github.com/mahdiyari/hive-tx-js",
+  "homepage": "https://github.com/mahdiyari/steem-tx-js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mahdiyari/hive-tx-js.git"
+    "url": "https://github.com/mahdiyari/steem-tx-js.git"
   },
   "devDependencies": {
     "browserify": "^16.5.0",

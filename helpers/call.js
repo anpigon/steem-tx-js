@@ -2,7 +2,7 @@ const axios = require('axios')
 const config = require('../config')
 
 /**
- * Make calls to hive node
+ * Make calls to steem node
  * @param {string}method - e.g. condenser_api.get_dynamic_global_properties
  * @param {Array}params - an array
  * @param {Number}timeout - optional - default 10 seconds
